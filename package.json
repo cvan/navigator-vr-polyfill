@@ -1,0 +1,35 @@
+{
+  "name": "sherpy",
+  "version": "1.0.5",
+  "description": "A command-line tool to easily develop using Browsersync (local dev server, live reloading, remote tunneling) and an offline-first Service Worker for static assets.",
+  "bin": "cli.js",
+  "repository": "cvan/sherpy",
+  "author": "Chris Van Wiemeersch",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.17.5",
+    "gaze": "^1.1.2",
+    "glob-hash": "^1.0.4",
+    "meow": "^3.6.0",
+    "object-assign": "^4.0.1"
+  },
+  "scripts": {
+    "release": "npm version patch --minor && npm publish && git push --follow-tags"
+  },
+  "keywords": [
+    "sherpy",
+    "browsersync",
+    "offline-first",
+    "offline",
+    "sericeworker",
+    "serice-worker",
+    "sw",
+    "livereload",
+    "live-reload",
+    "reload",
+    "static",
+    "static-assets",
+    "perf",
+    "cli"
+  ]
+}

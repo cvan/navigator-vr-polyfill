@@ -1,0 +1,17 @@
+<!doctype>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+console.log('stored', localStorage.referringDisplays);
+window.addEventListener('message', function (e) {
+  // if (e.data) {
+  console.log('[iframe] got message', e);
+  // }
+});
+window.top.postMessage('referringDisplays:ready', '*');
+    </script>
+  </body>
+</html>
